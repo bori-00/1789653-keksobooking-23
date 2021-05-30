@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Борис Хоменко](https://up.htmlacademy.ru/javascript/23/user/1789653).
-* Наставник: Дмитрий Гуляев..
+* Наставник: <a href="https://htmlacademy.ru/profile/dima">Дмитрий Гуляев</a>.
 
 ---
 
