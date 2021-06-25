@@ -1,6 +1,16 @@
-function a(b, c) {
-  let a = b + Math.random() * (c + 1 - b);
-  return Math.floor(a);
+function getRandomInteger(min, max) {
+
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
 }
 
-a(1, 5);
+getRandomInteger(1, 5);
+console.log(getRandomInteger(5, 0));
+
+function getRandom(min, max, n) {
+  let rand = min + Math.random() * (max + 1 - min);
+  rand = rand.toFixed(n);
+  console.log(rand);
+}
+
+getRandom(1, 5, 4);
