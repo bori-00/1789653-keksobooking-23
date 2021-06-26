@@ -1,16 +1,25 @@
-function getRandomInteger(min, max) {
-
-  let rand = min + Math.random() * (max + 1 - min);
-  return Math.floor(rand);
+function getRandomInteger (min, max) {
+  if (min === max) {
+    return min;
+  }
+  const rand = min + Math.random() * (max + 1 - min);
+  if (min >= 0) {
+    return Math.floor(rand);
+  }
 }
+getRandomInteger(3, 1);
+// console.log(result);
 
-getRandomInteger(1, 5);
-console.log(getRandomInteger(5, 0));
-
-function getRandom(min, max, n) {
-  let rand = min + Math.random() * (max + 1 - min);
-  rand = rand.toFixed(n);
-  console.log(rand);
+function getRandom (min, max, afterTheComma) {
+  if (min === max) {
+    return min;
+  }
+  let rand = min + Math.random(afterTheComma) * (max + 1 - min);
+  rand = rand.toFixed(afterTheComma);
+  //console.log(rand);
+  if (min >= 0) {
+    return Math.floor(rand);
+  }
+  return rand;
 }
-
-getRandom(1, 5, 4);
+getRandom(1, 5, 3);
